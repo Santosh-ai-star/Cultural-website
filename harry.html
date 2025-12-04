@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Few details</title>
+    <link rel="icon" type="image/x-icon" href="image/flag.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7109ebd684.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="half">
+        <marquee behavior="0.5sd" direction="" onmouseover="this.stop()" onmouseout="this.start()">Learn about A mosaic
+            of cultures, a mountain of hearts.
+        </marquee>
+        <div class="main">
+            <div class="bishal">
+                <div class="forimg">
+                    <img src="image/flag.jpg" alt="flag">
+                </div>
+                <div class="sec">
+                    <nav>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Gallery</a>
+                        <a href="#">Blog</a>
+                    </nav>
+                </div>
+                <div class="forser">
+                    <input type="text" placeholder="Search...">
+                    <button><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                
+                <img src="image/Nepali-Culture.jpg" alt="" class="card-image">
+
+                <h2>Ethnic Diversity:</h2>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 100%"></div>
+                </div>
+                <p>
+                    The country is a "melting pot" of various ethnic communities, including the Newars of the Kathmandu
+                    Valley (known for their artistry), the Sherpas of the Himalayas (renowned for their mountaineering
+                    skills and unique culture), and the Tharus of the Terai region, among many others.
+                </p>
+                 <img src="image/social_harmony_hIYOtn980Q.jpg" alt="" class="card-image">
+                <h2>Linguistic and Religious Harmony: </h2>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 100%"></div>
+                </div>
+                <p>
+                    This diversity is also reflected in the multitude of languages spoken and the peaceful coexistence of
+                    different religions, primarily Hinduism and Buddhism. Festivals from different faiths are celebrated
+                    by people of all backgrounds, fostering a sense of shared identity.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+<script>
+    document.querySelectorAll(".card").forEach((card) => {
+        card.addEventListener("mousemove", (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+
+            const rotateX = (y - centerY) / 0;
+            const rotateY = -(x - centerX) / 0;
+
+            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(10px)`;
+        });
+
+        card.addEventListener("mouseleave", () => {
+            card.style.transform = "none";
+        });
+    });
+
+    document.querySelectorAll(".button").forEach((button) => {
+        button.addEventListener("click", function () {
+            this.style.transform = "scale(0.95)";
+            setTimeout(() => {
+                this.style.transform = "scale(1)";
+            }, 200);
+        });
+    });
+</script>
+
+</html>

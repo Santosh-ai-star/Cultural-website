@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/7109ebd684.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+  <div class="half">
+    <marquee behavior="" direction="" onmouseover="this.stop()" onmouseout="this.start()">Welcome to about us page
+    </marquee>
+     <div class="main">
+      <div class="bishal">
+        <div class="forimg">
+          <img src="image/flag.jpg" alt="flag">
+        </div>
+        <div class="sec">
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Gallery</a>
+            <a href="#">Blog</a>
+          </nav>
+        </div>
+        <div class="forser">
+          <input type="text" placeholder="Search...">
+          <button><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="counter-area">
+      <div class="container-5">
+        <div class="counter-wrapper bg_cover" style="background-image: url(swayambhu-landscape-scaled.jpg);">
+          <div class="count-num">
+            <div class="numbs">
+              <h1 class="count" data-count="3652" ended="true"></h1>
+              <span class="est">
+                Students
+              </span>
+            </div>
+            <div class="numbs">
+              <h1 class="count" data-count="105" ended="true"></h1>
+              <span class="est">
+                Faculties
+              </span>
+            </div>
+            <div class="numbs">
+              <h1 class="count" data-count="102" ended="true">+</h1>
+              <span class="est">
+                Branches
+              </span>
+            </div>
+            <div class="numbs">
+              <h1 class="count" data-count="30" ended="true">+</h1>
+              <span class="est">
+                Awards win
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  </div>
+</body>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+  var counted = 0;
+  $(window).scroll(function () {
+
+    var oTop = $('.numbs').offset().top - window.innerHeight;
+    if (counted == 0 && $(window).scrollTop() > oTop) {
+      $('.count').each(function () {
+        var $this = $(this),
+          countTo = $this.attr('data-count');
+        $({
+          countNum: $this.text()
+        }).animate({
+          countNum: countTo
+        },
+
+          {
+
+            duration: 2000,
+            easing: 'swing',
+            step: function () {
+              $this.text(Math.floor(this.countNum));
+            },
+            complete: function () {
+              $this.text(this.countNum);
+              //alert('finished');
+            }
+
+          });
+      });
+      counted = 1;
+    }
+
+  });
+
+</script> -->
+
+
+</html>
